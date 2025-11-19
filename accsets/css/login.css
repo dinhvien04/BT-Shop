@@ -1,0 +1,231 @@
+.left-panel {
+    width: 50%;
+    height: 100%;
+    color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 50vh; 
+    left: 0; 
+}
+
+.right-panel {
+    width: 40%;
+    max-width: 460px;
+    min-width: 380px;
+    height: 620px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    position: absolute;
+    top: 40px;
+    right: 5%;
+    left: 55%; 
+}
+
+.left-panel .logo{
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.login-container,
+.register {
+    display: flex;
+    width: 100%;
+    height: 700px;
+    position: relative;
+    margin: 44px 0  0;
+    background-image: linear-gradient(0, var(--main-bg2-color), var(--main-bg1-color));
+}
+
+.right-panel h3 {
+    margin-bottom: 20px;
+
+}
+
+.facebook {
+    background-color: #3b5998;
+    color: white;
+}
+
+.google {
+    background-color: #db4437;
+    color: white;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border:1px solid #ccc;
+    border-radius: 6px;
+}
+
+.back-icon {
+    font-size: 12px;
+}
+
+.face-icon,
+.gg-icon {
+    padding: 0 5px;
+    font-size: 12px;
+}
+
+/* START : LOGIN */
+
+.login-container .social {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-container .options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+} 
+
+.login-container .login-with {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+.login-container .reg {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* END : LOGIN */
+
+/* START : REGISTER */ 
+
+.register .social-btn {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* END : REGISTER */
+
+/* RESPONSIVE */
+
+@media (min-width: 1024px) {
+    .right-panel{
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 1023px) {
+    .left-panel {
+        width: 40%;
+    }
+
+    .right-panel {
+         width: 50%;
+         left: 45%;
+    }
+}
+
+@media (max-width: 748px) {
+    .left-panel {
+        display: none;
+    }
+
+    .right-panel {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0; 
+        left: 0;
+        margin: 0 auto;
+    }
+}
+
+/* START : RESET PASS */
+
+#reset-pass {
+    margin-top: 44px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%; 
+    background-color: #f4f4f4;
+    background-image: url('../images/bg1.png');
+    background-repeat: no-repeat;
+    background-size: cover; /* hoặc contain */
+    background-position: center;
+}
+
+#reset-pass .form-container {
+    background-color: #ffffffb7;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 380px;
+}
+
+#reset-pass .form-container h2 {
+    text-align: center;
+    margin-bottom: 18px;
+    color: #333;
+    font-size: 28px;
+}
+
+#reset-pass .form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+#reset-pass .form-container label {
+    margin-bottom: 6px;
+    color: #444;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#reset-pass .form-container input {
+    padding: 9px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+#reset-pass .form-container input:focus {
+    border-color: var(--main-bg1-color);
+    outline: none;
+}
+
+#reset-pass .form-container button {
+    margin-top: 20px;
+    transition: background-color 0.2s;
+}
+
+#reset-pass .form-container button:hover {
+    background-color: #0056b3;
+}
+
+/* END : RESET PASS */
